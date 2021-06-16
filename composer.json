@@ -1,0 +1,31 @@
+{
+  "name": "zhanxin/weather",
+  "description": "通过IPv4、IPv6查询天气",
+  "type": "library",
+  "keywords": ["weather"],
+  "homepage": "https://github.com/caserwiki/weather",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "zx",
+      "email": "leowiki@foxmail.com"
+    }
+  ],
+  "require": {
+    "itbdw/ip-database": "^3.0",
+    "ext-json": "*",
+    "ext-curl": "*"
+  },
+  "autoload": {
+    "psr-4": {
+      "Zx\\Weather\\": "src/"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Zx\\Weather\\ServiceProvider"
+      ]
+    }
+  }
+}
